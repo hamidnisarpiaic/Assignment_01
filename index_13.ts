@@ -1,10 +1,8 @@
-// Define the array of invitees
-let invitee: string[] = ["Hamid", "Ali", "Zahid", "Sami", "Fawad"];
+/* Exercise No.13
+13.	Your Own Array: Think of your favourite mode of transportation, such as a motorcycle or a car, and make a list that stores several examples. Use your list to print a series of statements about these items, such as “I would like to own a Honda motorcycle.”
+*/
+let favoriteTransportation: string[] = ["Honda motorcycle", "Tesla car", "BMW bike", "Toyota truck"];
 
-// Sort the array in ascending order
-invitee.sort();
-
-// Greet each person in the sorted array
-for (let i = 0; i < invitee.length; i++) {
-  console.log(`My Dear ${invitee[i]}, kindly attend my wedding ceremony on 25th July, 2023.`);
+for (let i = 0; i < favoriteTransportation.length; i++) {
+  console.log(`I would like to own a ${favoriteTransportation[i]}.`);
 }

@@ -1,9 +1,10 @@
-// Create an array of transport options
-var transports = ['motorcycle', 'cycle', 'riksha', 'car', 'jeep'];
-// Create a statement for each mode of transport
-var statements = transports.map(function (transport) { return "I would like to use ".concat(transport, "."); });
-// Print each statement separately
-for (var _i = 0, statements_1 = statements; _i < statements_1.length; _i++) {
-    var statement = statements_1[_i];
-    console.log(statement);
+/*
+Exercise No.12.	Greetings: Start with the array you used in Exercise 11, but instead of just printing each person’s name, print a message to them. The text of each message should be the same, but each message should be personalized with the person’s name.
+*/
+var favNam1 = ["Hamid", "Ali", "Zahid", "Sami", "Fawad"];
+// Sort the array in ascending order
+favNam1.sort();
+// Greet each person in the sorted array
+for (var i = 0; i < favNam1.length; i++) {
+    console.log("Hello, How are your my dear ".concat(favNam1[i], "!"));
 }
