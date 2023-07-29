@@ -1,5 +1,3 @@
-// Exercise No. 2
-// declaring variable
-let nam : string = "Hamid";
-// displaying message
-console.log(`Hello, ${nam}! Would you like to learn some python today?`)
+// Exercise No. 1 indysllsyion og vs code, node JS & Github
+
+console.log(`installed VS Code & Node JS & Github`)
