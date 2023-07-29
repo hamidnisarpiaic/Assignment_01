@@ -1,7 +1,5 @@
-// Exercise No. 6
-// declare variable for showing Write spaces
-let fnam : string = "\t Hamid Nisar \n";
-console.log(`My Name with White Spaces: ${fnam}`);
-// stripping White Spaces from the beginning and end of name
-let ffNam : string = fnam.trim();
-console.log(`My Name without White Spaces: ${ffNam}`);
+/* Exercise No.5.	Famous Quote 2: Repeat Exercise 4, but this time store the famous person’s name in a variable called famous_person. Then compose your message and store it in a new variable called message. Print your message.
+*/
+let famous_person: string = "Alber Enintstein";
+let message: string = "A person who never made a mistake never tried anything new.";
+console. log (`${famous_person} once said, "${message}"`);
