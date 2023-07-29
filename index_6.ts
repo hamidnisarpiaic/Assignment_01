@@ -1,20 +1,7 @@
-function performOperations(): void {
-    // Addition: 4 + 4 = 8
-    const additionResult = 4 + 4;
-    console.log("Addition:", additionResult);
-  
-    // Subtraction: 10 - 2 = 8
-    const subtractionResult = 10 - 2;
-    console.log("Subtraction:", subtractionResult);
-  
-    // Multiplication: 2 * 4 = 8
-    const multiplicationResult = 2 * 4;
-    console.log("Multiplication:", multiplicationResult);
-  
-    // Division: 16 / 2 = 8
-    const divisionResult = 16 / 2;
-    console.log("Division:", divisionResult);
-  }
-  
-  performOperations();
-  
+/*Exercise Node. 6.	Stripping Names: Store a person’s name, and include some whitespace characters at the beginning and end of the name. Make sure you use each character combination, "\t" and "\n", at least once. Print the name once, so the whitespace around the name is displayed. Then print the name after striping the white spaces.
+*/
+
+let personNam: string = " Hamid Nisar ";
+console.log (`${personNam}`);
+let personNam1: string = "Hamid";
+console.log (`${personNam1}`)
