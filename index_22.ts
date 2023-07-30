@@ -1,28 +1,13 @@
-console.log('APPLE'.toLowerCase() !== 'APPLE'); // true
-console.log('APPLE'.toLowerCase() === 'APPLE'); // false
-console.log('APPLE'.toLowerCase() !== 'apple'); // false
-// Numerical tests
-let num1 : number = 5, num2 : number = 6;
-console.log(num1 === num2); // false
-console.log(num1 !== num2); // true
-console.log(num2 > num1); // true
-console.log(num1 < num2); // true
-console.log(num2 >= num1); // true
-console.log(num1 <= num2); // true
-console.log(num1 === num2); // false
-console.log(num1 !== num1); // false
-console.log(num1 > num2); // false
-console.log(num2 < num1); // false
-console.log(num1 >= num2); // false
-console.log(num2 <= num1); // false
-// Tests using "and" and "or" operators
-console.log(5 > 4 && 6 > 5); // true
-console.log(5 > 4 || 6 < 5); // true
-console.log(5 > 6 && 6 > 5); // false
-console.log(5 > 6 || 6 < 5); // false
-// Test whether an item is/ is not in an array
-const fruits : string[] = ['apple', 'orange', 'banana'];
-console.log('apple' == fruits[0]); // true
-console.log('orange' == fruits[1]); // true
-console.log('pear' == fruits[2]); // false
-console.log('pineapple' == fruits[1]); // false
+/*const fruits: string[] = ["apple", "banana", "orange"];
+
+// Try to access an element at an index that is out of bounds
+const indexError = fruits[3];
+
+console.log(indexError);
+*/
+const fruits: string[] = ["apple", "banana", "orange"];
+
+// corrected wrong done in code in comments above.
+const indexError = fruits[2];
+
+console.log(indexError);

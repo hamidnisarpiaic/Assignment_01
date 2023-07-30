@@ -1,3 +1,5 @@
-var guest1 = 'Ali';
-var guest2 = 'Ahmad';
-console.log("Mr. ".concat(guest1, " and ").concat(guest2, " are invited to dinner."));
+/* exercise No. 19.
+Dinner Guests: Working with one of the programs from Exercises 14 through 18,
+print a message indicating the number of people you are inviting to dinner.*/
+var arrayInvitee3 = ["Hamid", "Ali", "Qasim"];
+console.log("".concat(arrayInvitee3.join(", "), " are invited to dinner."));

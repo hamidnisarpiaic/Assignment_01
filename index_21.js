@@ -18,6 +18,7 @@ var car3 = {
     color: 'Red',
 };
 // Display the car objects
+console.log("list of 3 cars");
 console.log(car1);
 console.log(car2);
 console.log(car3);
