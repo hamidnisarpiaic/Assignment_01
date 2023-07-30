@@ -7,7 +7,10 @@ Exercise No.16
 
 
 */
-var arrayInvitees1 = ["Hamid", "Ali", "Qasim", "Ahmad", "Fawad",];
+var arrayInvitees1 = ["Hamid", "Ali", "Qasim", "Ahmad", "Fawad"];
 for (var i = 0; i < arrayInvitees1.length; i++) {
-    console.log("My Dear ".concat(arrayInvitees1[i], ", I found bigger table for dinner, therefore, I will invite more guests at my home on 25th July, 2023."));
+    console.log("My Dear ".concat(arrayInvitees1[i], ", I found a bigger table for dinner, therefore, I will invite more guests to my home on 25th July, 2023."));
 }
+arrayInvitees1.shift(); // Equivalent to arrayInvitees1.splice(0, 1);
+arrayInvitees1.push("Jamil"); // Equivalent to arrayInvitees1.splice(arrayInvitees1.length, 0, "Jamil");
+console.log("My dear ".concat(arrayInvitees1.join(", "), " you are still invited to attend dinner."));
