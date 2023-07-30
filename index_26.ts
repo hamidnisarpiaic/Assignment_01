@@ -1,19 +1,30 @@
-let age : number = 20;
-if (age < 2) {
-  console.log("The person is a baby.");
-} 
-else if (age >= 2 && age < 4) {
-  console.log("The person is a toddler.");
-} 
-else if (age >= 4 && age < 13) {
-  console.log("The person is a kid.");
-} 
-else if (age >= 13 && age < 20) {
-  console.log("The person is a teenager.");
-} 
-else if (age >= 20 && age < 65) {
-  console.log("The person is an adult.");
-} 
-else {
-  console.log("The person is an elder.");
+/*
+Exercise No. 26.	
+Alien Colors #2: Choose a color for an alien as you did in Exercise 25, and write an if-else chain.
+• If the alien’s color is green, print a statement that the player just earned 5 points for shooting the alien.
+• If the alien’s color isn’t green, print a statement that the player just earned 10 points.
+*/
+
+// if the alien's color is green, print a statement that the player just earned 5 points for shooting the alien.
+
+let alien_colors: string = 'green';
+
+if (alien_colors === "green") {
+  console.log('You earn 5 points for shooting the alien.');
+} else {
+  console.log('You just earned 10 points!');
 }
+
+// If the alien’s color isn’t green, print a statement that the player just earned 10 points.
+
+
+let alienColors: string = 'yellow';
+
+if (alienColors !== "green") {
+  console.log('You earn 10 points for shooting the alien.');
+} else {
+  console.log('You just earned 5 points!');
+}
+
+
+
