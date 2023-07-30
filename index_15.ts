@@ -18,3 +18,9 @@ arrayInvitees.splice(indextoRemove, 1, "Waseem");
 for (let i = 0; i < arrayInvitees.length; i++) {
   console.log(`My Dear ${arrayInvitees[i]}, kindly attend dinner at my home on 25th July, 2023.`);
 }
+const newGuest: string = "Daud";
+
+arrayInvitees.splice(0, 0, newGuest); // Add "Daud" at index 0
+{
+console.log(`${arrayInvitees}`);
+}
