@@ -11,10 +11,10 @@ arrayInvitees.splice(indextoRemove, 1, "Waseem");
 
 // Start from Exercise No.14
 let arrayInvitees: string[] = ["Hamid", "Ali", "Qasim", "Ahmad", "Fawad"];
+console.log (`Ali will not attend dinner`);
 let indextoRemove: number = 1; // Index of the item you want to remove
 
 arrayInvitees.splice(indextoRemove, 1, "Waseem");
-console.log(`${arrayInvitees}`);
 for (let i = 0; i < arrayInvitees.length; i++) {
   console.log(`My Dear ${arrayInvitees[i]}, kindly attend dinner at my home on 25th July, 2023.`);
 }

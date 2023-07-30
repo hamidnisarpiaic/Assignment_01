@@ -10,9 +10,9 @@ arrayInvitees.splice(indextoRemove, 1, "Waseem");
 */
 // Start from Exercise No.14
 var arrayInvitees = ["Hamid", "Ali", "Qasim", "Ahmad", "Fawad"];
+console.log("Ali will not attend dinner");
 var indextoRemove = 1; // Index of the item you want to remove
 arrayInvitees.splice(indextoRemove, 1, "Waseem");
-console.log("".concat(arrayInvitees));
 for (var i = 0; i < arrayInvitees.length; i++) {
     console.log("My Dear ".concat(arrayInvitees[i], ", kindly attend dinner at my home on 25th July, 2023."));
 }
