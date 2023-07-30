@@ -1,23 +1,20 @@
-var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
-    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
-        if (ar || !(i in from)) {
-            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
-            ar[i] = from[i];
-        }
-    }
-    return to.concat(ar || Array.prototype.slice.call(from));
-};
 // Think of at least five places in the world you’d like to visit
-var placesToVisit = ["Japan", "USA", "Pakistan", "UK", "India"];
-// Print the original order of the array
-console.log("Original Order:");
-console.log(placesToVisit);
-// Print the array in alphabetical order without modifying the original list
-console.log("Alphabetical Order without modifying the actual Array:");
-console.log(__spreadArray([], placesToVisit, true).sort());
-// Print the array in reverse alphabetical order without changing the original list
-console.log("Reversed Alphabetical Order without changing the actual Order:");
-console.log(__spreadArray([], placesToVisit, true).sort(function (a, b) { return b.localeCompare(a); }));
-// Show that the original array remains unchanged
-console.log("Original Order (Unchanged):");
-console.log(placesToVisit);
+/*
+Exercise No. 17.	•
+Print a message to each of the two people still on your list, letting them know they’re still invited. Shrinking Guest List: You just found out that your new dinner table won’t arrive in time for the dinner, and you have space for only two guests.
+• Start with your program from Exercise 16. Add a new line that prints a message
+• Remove the last two names from your list, so you have an empty list. Print your list to make sure you actually have an empty list at the end of your program.
+*/
+var arrayInvitees12 = ["Hamid", "Ali", "Qasim", "Ahmad", "Fawad"];
+for (var i = 0; i < arrayInvitees12.length; i++) {
+    if (i < 2) {
+        console.log("My Dear ".concat(arrayInvitees12[i], ", You're still invited to the dinner on 25th July, 2023."));
+    }
+    else {
+        console.log("".concat(arrayInvitees12[i], ", unfortunately, we have limited space and won't be able to accommodate you."));
+    }
+}
+// Remove the last two names from the list
+arrayInvitees12.pop();
+arrayInvitees12.pop();
+console.log("Updated guest list: ".concat(arrayInvitees12.join(", ")));

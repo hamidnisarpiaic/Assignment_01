@@ -6,13 +6,19 @@ Print a message to each of the two people still on your list, letting them know 
 • Remove the last two names from your list, so you have an empty list. Print your list to make sure you actually have an empty list at the end of your program.
 */
 
+let arrayInvitees12: string[] = ["Hamid", "Ali", "Qasim", "Ahmad", "Fawad"];
 
-
-
-
-let arrayInvitees3: string[] = ["Hamid", "Ali", "Qasim", "Ahmad", "Fawad",];
-for (let i = 0; i < arrayInvitees3.length; i++) {
-  console.log(`My Dear ${arrayInvitees3[i]}, I found samaller table for dinner, therefore, I will invite only two guests separately on 25th July, 2023.`);
+for (let i = 0; i < arrayInvitees12.length; i++) {
+  if (i < 2) {
+    console.log(`My Dear ${arrayInvitees12[i]}, You're still invited to the dinner on 25th July, 2023.`);
+  } else {
+    console.log(`${arrayInvitees12[i]}, unfortunately, we have limited space and won't be able to accommodate you.`);
+  }
 }
 
+// Remove the last two names from the list
+arrayInvitees12.pop();
+arrayInvitees12.pop();
+
+console.log(`Updated guest list: ${arrayInvitees12.join(", ")}`);
 

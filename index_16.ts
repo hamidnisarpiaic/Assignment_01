@@ -8,13 +8,13 @@ Exercise No.16
 
 */
 
-let arrayInvitees1: string[] = ["Hamid", "Ali", "Qasim", "Ahmad", "Fawad"];
+let arrayInvitees11: string[] = ["Hamid", "Ali", "Qasim", "Ahmad", "Fawad"];
 
-for (let i = 0; i < arrayInvitees1.length; i++) {
-  console.log(`My Dear ${arrayInvitees1[i]}, I found a bigger table for dinner, therefore, I will invite more guests to my home on 25th July, 2023.`);
+for (let i = 0; i < arrayInvitees11.length; i++) {
+  console.log(`My Dear ${arrayInvitees11[i]}, I found a bigger table for dinner, therefore, I will invite more guests to my home on 25th July, 2023.`);
 }
 
-arrayInvitees1.shift(); // Equivalent to arrayInvitees1.splice(0, 1);
-arrayInvitees1.push("Jamil"); // Equivalent to arrayInvitees1.splice(arrayInvitees1.length, 0, "Jamil");
+arrayInvitees11.shift(); // Equivalent to arrayInvitees1.splice(0, 1);
+arrayInvitees11.push("Jamil"); // Equivalent to arrayInvitees1.splice(arrayInvitees1.length, 0, "Jamil");
 
-console.log(`My dear ${arrayInvitees1.join(", ")} you are still invited to attend dinner.`);
+console.log(`My dear ${arrayInvitees11.join(", ")} you are still invited to attend dinner.`);
