@@ -1,16 +1,25 @@
-// Exercise 33
-let nums: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-for (let num of nums) {
-    if (num == 1) {
-        console.log('1st');
-    } 
-    else if (num == 2) {
-        console.log('2nd');
-    } 
-    else if (num == 3) {
-        console.log('3rd');
-    } 
-    else {
-        console.log(`${num}th`);
-    }
+/*
+31.	No Users: Add an if test to Exercise 28 to make sure the list of users is not empty.
+• If the list is empty, print the message We need to find some users!
+• Remove all of the usernames from your array, and make sure the correct message is printed
+
+
+
+
+*/
+
+
+
+// List of current usernames
+let currentUsers: string[] = ['Alice', 'Bob', 'Charlie', 'Dave', 'Eric'];
+
+// Check if the list of users is not empty
+if (currentUsers.length === 0) {
+  console.log("We need to find some users!");
+} else {
+  // Remove all usernames from the array
+  currentUsers = [];
+
+  // Print a message to indicate that all usernames have been removed
+  console.log("All usernames have been removed from the list.");
 }
