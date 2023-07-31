@@ -11,22 +11,29 @@ Stages of Life: Write an if-else chain that determines a person’s stage of lif
 
 
 */
+// Define the variable 'age' and assign the value 30 to it
 var age = 30;
+// Check if 'age' is less than 2
 if (age < 2) {
-    console.log("The person is a baby.");
+    console.log("The person is a baby."); // If age is less than 2, log "The person is a baby."
 }
+// If 'age' is not less than 2, check if it's between 2 (inclusive) and 4 (exclusive)
 else if (age >= 2 && age < 4) {
-    console.log("The person is a toddler.");
+    console.log("The person is a toddler."); // If age is between 2 and 4, log "The person is a toddler."
 }
+// If 'age' is not between 2 and 4, check if it's between 4 (inclusive) and 13 (exclusive)
 else if (age >= 4 && age < 13) {
-    console.log("The person is a kid.");
+    console.log("The person is a kid."); // If age is between 4 and 13, log "The person is a kid."
 }
+// If 'age' is not between 4 and 13, check if it's between 13 (inclusive) and 20 (exclusive)
 else if (age >= 13 && age < 20) {
-    console.log("The person is a teenager.");
+    console.log("The person is a teenager."); // If age is between 13 and 20, log "The person is a teenager."
 }
+// If 'age' is not between 13 and 20, check if it's between 20 (inclusive) and 65 (exclusive)
 else if (age >= 20 && age < 65) {
-    console.log("The person is an adult.");
+    console.log("The person is an adult."); // If age is between 20 and 65, log "The person is an adult."
 }
+// If 'age' is not between 20 and 65, it means the person is 65 or older
 else {
-    console.log("The person is an elder.");
+    console.log("The person is an elder."); // Log "The person is an elder."
 }
