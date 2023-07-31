@@ -4,18 +4,15 @@ Hello Admin: Make a array of five or more usernames, including the name 'admin'.
 • Otherwise, print a generic greeting, such as Hello Eric, thank you for logging in again.
 */
 
-let currentUsers: string[] = ["Admin", "writer", "Editor", "user1", "user2"];
+// Make an array of usernames
+const usernames: string[] = ["admin", "Eric", "John", "Alice", "Mike"];
 
-if (currentUsers.indexOf('Admin') === 0) {
-    console.log("Hello Admin, would you like to see a status report?");
-} else {
-    console.log("Hello, thank you for logging in again");
-}
-
-let currentUsers1: string[] = ["Admin", "writer", "Editor", "user1", "user2"];
-
-if (currentUsers1.indexOf('Admin') !== 0) {
-    console.log("Hello Admin, would you like to see a status report?");
-} else {
-    console.log("Hello, thank you for logging in again");
+// Loop through the array and print a greeting to each user
+for (const username of usernames) {
+  // Check if the username is 'admin'
+  if (username.toLowerCase() === 'admin') {
+    console.log("Hello admin, would you like to see a status report?");
+  } else {
+    console.log(`Hello ${username}, thank you for logging in again.`);
+  }
 }
