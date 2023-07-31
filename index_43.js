@@ -15,7 +15,7 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
     }
     return to.concat(ar || Array.prototype.slice.call(from));
 };
-var mag_name = ["Duck", "Fic", "Hami", "dumdum"];
+var magician_name = ["Duck", "Fic", "Hami", "dumdum"];
 function show_magicians(names) {
     for (var _i = 0, names_1 = names; _i < names_1.length; _i++) {
         var name_1 = names_1[_i];
@@ -28,9 +28,9 @@ function make_great(names) {
 }
 // Original magicians
 console.log("Original Magicians:");
-show_magicians(mag_name);
+show_magicians(magician_name);
 // Create a copy of the original array and modify it to become "the Great" magicians
-var greatMagiciansArr = make_great(__spreadArray([], mag_name, true));
+var greatMagiciansArr = make_great(__spreadArray([], magician_name, true));
 // Magicians after being modified
 console.log("\nGreat Magicians:");
 show_magicians(greatMagiciansArr);
