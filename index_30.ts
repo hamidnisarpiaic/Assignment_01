@@ -1,14 +1,21 @@
-let current_users: string[] = ['Ali', 'Fatima', 'Hassan', 'Hussain', 'Baqir'];
-let new_users: string[] = ['Ali', 'Jaffar', 'Mosa', 'Raza', 'Hassan'];
+/*Exercise No.30.	
+Hello Admin: Make a array of five or more usernames, including the name 'admin'. Imagine you are writing code that will print a greeting to each user after they log in to a website. Loop through the array, and print a greeting to each user:
+• If the username is 'admin', print a special greeting, such as Hello admin, would you like to see a status report?
+• Otherwise, print a generic greeting, such as Hello Eric, thank you for logging in again.
+*/
 
-// Convert the current users' array to a case-insensitive Set
-const currentUsersSet = new Set(current_users.map(user => user.toLowerCase()));
+let currentUsers: string[] = ["Admin", "writer", "Editor", "user1", "user2"];
 
-for (let new_user of new_users) {
-    // Check if the lowercase new_user is in the currentUsersSet
-    if (currentUsersSet.has(new_user.toLowerCase())) {
-        console.log(`The username "${new_user}" is already taken. Please enter a new username.`);
-    } else {
-        console.log(`The username "${new_user}" is available.`);
-    }
+if (currentUsers.indexOf('Admin') === 0) {
+    console.log("Hello Admin, would you like to see a status report?");
+} else {
+    console.log("Hello, thank you for logging in again");
+}
+
+let currentUsers1: string[] = ["Admin", "writer", "Editor", "user1", "user2"];
+
+if (currentUsers1.indexOf('Admin') !== 0) {
+    console.log("Hello Admin, would you like to see a status report?");
+} else {
+    console.log("Hello, thank you for logging in again");
 }
