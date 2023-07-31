@@ -1,9 +1,13 @@
-// Exercise 41
-function show_magicians(magicians) {
-    for (var _i = 0, magicians_1 = magicians; _i < magicians_1.length; _i++) {
-        var magician_1 = magicians_1[_i];
-        console.log(magician_1);
-    }
+/*
+3Exercise No.39.	City Names: Write a function called city_country() that
+takes in the name of a city and its country. The function should return a string formatted like this:
+"Lahore, Pakistan"
+
+*/
+function city_country(city, country) {
+    if (country === void 0) { country = "unknow"; }
+    console.log("".concat(city, ", ").concat(country));
 }
-var magician = ['David Copperfield', 'Harry Houdini', 'Penn & Teller'];
-show_magicians(magician);
+city_country("Karachi", "Pakistan");
+city_country("Newyord", "USA");
+city_country("London", "UK");

@@ -1,14 +1,40 @@
-// Exercise 42
-function show_magicians(magicians: string[]) {
-    for (let magician of magicians) {
-        console.log(magician);
+/*
+
+Exercise No. 40.	
+Album: Write a function called make_album() that builds a Object describing a music album. 
+The function should take in an artist name and an album title, and it should return a Object 
+containing these two pieces of information. Use the function to make three dictionaries 
+representing different albums. Print each return value to show that Objects are storing the
+album information correctly. Add an optional parameter to make_album() that
+allows you to store the number of tracks on an album. If the calling line includes
+a value for the number of tracks, add that value to the album’s Object. 
+Make at least one new function call that includes the number of tracks on an album.
+
+
+
+*/
+function makeAlbum(artist: string, title: string, numTracks?: number): object {
+    const album: any = {
+      artist,
+      title,
+    };
+  
+    if (numTracks !== undefined) {
+      album.numTracks = numTracks;
     }
-}
-function make_great(magicians: string[]) {
-    for (let i = 0; i < magicians.length; i++) {
-        magicians[i] = `${magicians[i]}, the Great`;
-    }
-}
-let magicians1: string[] = ['David Copperfield', 'Harry Houdini', 'Penn & Teller'];
-make_great(magicians1);
-show_magicians(magicians1);
+  
+    return album;
+  }
+  
+  // Create three dictionaries representing different albums
+  const album1 = makeAlbum("Nusurat Fateh Ali Khan", "Album Title 1");
+  const album2 = makeAlbum("Mehdi Hassan", "Album Title 2", 12);
+  const album3 = makeAlbum("Noor Jahan", "Album Title 3", 8);
+  
+  // Print each return value to show that Objects are storing the album information correctly
+  console.log(album1);
+  console.log(album2);
+  console.log(album3);
+  
+
+

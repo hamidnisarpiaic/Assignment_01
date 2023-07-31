@@ -1,9 +1,28 @@
-// Exercise 37
-function make_shirt(size, message) {
-    if (size === void 0) { size = 'Large'; }
-    if (message === void 0) { message = 'I love TypeScript'; }
-    console.log("The shirt's size is, by default, ".concat(size, " and its message is: '").concat(message, "'."));
+/*
+Exercise No.35.
+Animals: Think of at least three different animals that have a common characteristic.
+Store the names of these animals in a list, and then use a for loop to print out the name of each animal.
+ • Modify your program to print a statement about each animal, such as A dog would make a great pet.
+ • Add a line at the end of your program stating what these animals have in common.
+ You could print a sentence such as Any of these animals would make a great pet!
+
+*/
+function printAnimals() {
+    var animals = ["Dog", "Cat", "Rabbit"];
+    // Print the name of each animal
+    console.log("Animals:");
+    for (var _i = 0, animals_1 = animals; _i < animals_1.length; _i++) {
+        var animal = animals_1[_i];
+        console.log(animal);
+    }
+    // Print a statement about each animal
+    console.log("\nStatements about each animal:");
+    for (var _a = 0, animals_2 = animals; _a < animals_2.length; _a++) {
+        var animal = animals_2[_a];
+        console.log("A ".concat(animal.toLowerCase(), " would make a great pet."));
+    }
+    // Print what these animals have in common
+    console.log("\nWhat these animals have in common:");
+    console.log("Any of these animals would make a great pet!");
 }
-make_shirt();
-make_shirt('Medium');
-make_shirt('Small', 'Hello to the World!');
+printAnimals();
