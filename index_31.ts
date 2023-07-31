@@ -11,14 +11,14 @@
 
 
 // List of current usernames
-let currentUsers: string[] = ['Alice', 'Bob', 'Charlie', 'Dave', 'Eric'];
+let currentUsers1: string[] = ['Alice', 'Bob', 'Charlie', 'Dave', 'Eric'];
 
 // Check if the list of users is not empty
-if (currentUsers.length === 0) {
+if (currentUsers1.length === 0) {
   console.log("We need to find some users!");
 } else {
   // Remove all usernames from the array
-  currentUsers = [];
+  currentUsers1 = [];
 
   // Print a message to indicate that all usernames have been removed
   console.log("All usernames have been removed from the list.");
