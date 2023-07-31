@@ -1,6 +1,29 @@
-// Exercise 34
-let pizzas: string[] = ['pepperoni', 'margherita', 'hawaiian'];
-for (let pizza of pizzas) {
-    console.log(`I like ${pizza} pizza.`);
+/*
+Exercise No.32.	Checking Usernames: Do the following to create a program 
+that simulates how websites ensure that everyone has a unique username.
+• Make a list of five or more usernames called current_users.
+• Make another list of five usernames called new_users. Make sure one or two of the new usernames are also in the current_users list.
+• Loop through the new_users list to see if each new username has already been used. If it has, print a message that the person will need to enter a new username. If a username has not been used, print a message saying that the username is available.
+• Make sure your comparison is case insensitive. If 'John' has been used, 'JOHN' should not be accepted.
+
+*/
+
+const current_users:string[] = ["Wahid","Shahid", "Zahid","Jamil", "Wakeel"];
+const new_users:string []= ["Farooq", "Faheem", "Waseem", "Wahid", "Zahid"];
+// List of current usernames
+
+// Loop through each new username in the 'new_users' array
+for (let new_user of new_users) {
+    // Convert the new username to lowercase for case-insensitive comparison
+    const new_user_lower = new_user.toLowerCase();
+
+    // Check if the new username exists in the current usernames
+    const is_username_taken = current_users.some(user => user.toLowerCase() === new_user_lower);
+
+    // Print the appropriate message based on whether the username is taken or available
+    if (is_username_taken) {
+        console.log(`The username '${new_user}' is already taken. Please enter a new username.`);
+    } else {
+        console.log(`The username '${new_user}' is available.`);
+    }
 }
-console.log('I really love pizza!');
