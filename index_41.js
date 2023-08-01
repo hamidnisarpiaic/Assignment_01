@@ -14,4 +14,4 @@ function show1_magicians(names) {
     }
 }
 // Call the show_magicians function to display the names of the magicians.
-show_magicians(magacians_name);
+show1_magicians(magacians_name);

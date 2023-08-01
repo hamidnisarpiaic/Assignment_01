@@ -15,4 +15,4 @@ function show1_magicians (names: string[]): void {
 }
 
 // Call the show_magicians function to display the names of the magicians.
-show_magicians(magacians_name);
+show1_magicians(magacians_name);
